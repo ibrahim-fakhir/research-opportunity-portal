@@ -1,0 +1,29 @@
+{
+  "name": "university-research-opportunity-portal",
+  "version": "1.0.0",
+  "description": "University Research Opportunity Portal - FAST Peshawar Assignment #1 (Fall-2026, BS CS 5B)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node scripts/run_tests.js",
+    "package": "node scripts/package_submission.js"
+  },
+  "keywords": [
+    "research-portal",
+    "crud-api",
+    "rest-api",
+    "express",
+    "mysql",
+    "sqlite"
+  ],
+  "author": "BS CS 5B Student",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0"
+  }
+}
