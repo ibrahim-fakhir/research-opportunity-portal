@@ -1,0 +1,17 @@
+meta {
+  name: 5. Retrieve Opportunity By ID
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:5000/api/opportunities/1
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body.success: eq true
+  res.body.data.id: eq 1
+}

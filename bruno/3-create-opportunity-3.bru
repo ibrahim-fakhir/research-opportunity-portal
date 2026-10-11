@@ -1,0 +1,30 @@
+meta {
+  name: 3. Create Opportunity 3
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/opportunities
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Multimodal Urdu Speech-to-Text with Whisper",
+    "description": "Fine-tuning Whisper and wav2vec models on low-resource regional dialects for automated healthcare kiosks.",
+    "research_area": "Natural Language Processing",
+    "faculty_name": "Dr. Muhammad Ali",
+    "department": "Software Engineering",
+    "required_skills": "Python, HuggingFace, Audio Processing, PyTorch",
+    "available_positions": 4,
+    "application_deadline": "2026-10-31",
+    "status": "Open"
+  }
+}
+
+assert {
+  res.status: eq 201
+  res.body.success: eq true
+}

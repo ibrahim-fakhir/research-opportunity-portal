@@ -1,0 +1,26 @@
+meta {
+  name: 10. Invalid Validation Request
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:5000/api/opportunities
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "",
+    "faculty_name": "",
+    "available_positions": -1,
+    "application_deadline": "invalid-date"
+  }
+}
+
+assert {
+  res.status: eq 400
+  res.body.success: eq false
+  res.body.error: eq Validation failed
+}

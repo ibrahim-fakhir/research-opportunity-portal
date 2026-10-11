@@ -1,0 +1,23 @@
+meta {
+  name: 7. Change Status to Closed
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:5000/api/opportunities/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "status": "Closed"
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body.success: eq true
+  res.body.data.status: eq Closed
+}

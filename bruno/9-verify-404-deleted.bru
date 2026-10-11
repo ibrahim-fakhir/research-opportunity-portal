@@ -1,0 +1,16 @@
+meta {
+  name: 9. Verify 404 After Deletion
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:5000/api/opportunities/1
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 404
+  res.body.success: eq false
+}

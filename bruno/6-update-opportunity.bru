@@ -1,0 +1,24 @@
+meta {
+  name: 6. Update Opportunity
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:5000/api/opportunities/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "available_positions": 5,
+    "required_skills": "Python, PyTorch, OpenCV, MONAI, Git, Docker"
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body.success: eq true
+  res.body.data.available_positions: eq 5
+}

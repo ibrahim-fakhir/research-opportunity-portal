@@ -1,0 +1,31 @@
+meta {
+  name: 1. Create Opportunity 1
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/api/opportunities
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Deep Learning for Medical Image Segmentation",
+    "description": "Investigating transformer-based vision architectures for MRI scan segmentation with clinical validation.",
+    "research_area": "Artificial Intelligence & Computer Vision",
+    "faculty_name": "Dr. Tariq Khan",
+    "department": "Computer Science",
+    "required_skills": "Python, PyTorch, OpenCV, MONAI, Git",
+    "available_positions": 3,
+    "application_deadline": "2026-11-30",
+    "status": "Open"
+  }
+}
+
+assert {
+  res.status: eq 201
+  res.body.success: eq true
+  res.body.data.id: isDefined
+}
