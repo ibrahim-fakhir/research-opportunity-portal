@@ -7,8 +7,8 @@
 
 ## 📌 Student & Submission Information
 
-- **Student Name:** `[Your Name Here]`
-- **Roll Number:** `[P24-XXXX]`
+- **Student Name:** Muhammad Ibrahim Fakhir
+- **Roll Number:** 24P-0600
 - **Class / Section:** `BS CS 5B`
 - **GitHub Repository:** [https://github.com/ibrahim-fakhir/research-opportunity-portal](https://github.com/ibrahim-fakhir/research-opportunity-portal)
 - **Demo Video Link:** `[Link to Google Drive / YouTube Unlisted Video or included in submission ZIP]`
