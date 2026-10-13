@@ -10,7 +10,7 @@
 - **Student Name:** `[Your Name Here]`
 - **Roll Number:** `[P24-XXXX]`
 - **Class / Section:** `BS CS 5B`
-- **GitHub Repository:** `https://github.com/username/research-opportunity-portal` *(Replace with your repository URL)*
+- **GitHub Repository:** [https://github.com/ibrahim-fakhir/research-opportunity-portal](https://github.com/ibrahim-fakhir/research-opportunity-portal)
 - **Demo Video Link:** `[Link to Google Drive / YouTube Unlisted Video or included in submission ZIP]`
 
 ---
